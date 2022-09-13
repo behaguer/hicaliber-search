@@ -92504,7 +92504,7 @@ var render = function () {
   return _c(
     "el-form",
     {
-      staticClass: "demo-form-inline",
+      staticClass: "search-form",
       attrs: { inline: true, model: _vm.formInline },
     },
     [
@@ -92534,7 +92534,7 @@ var render = function () {
             "el-select",
             {
               staticStyle: { width: "70px" },
-              attrs: { placeholder: "Bedrooms" },
+              attrs: { placeholder: "" },
               model: {
                 value: _vm.formInline.bedrooms,
                 callback: function ($$v) {
@@ -92570,7 +92570,7 @@ var render = function () {
             "el-select",
             {
               staticStyle: { width: "70px" },
-              attrs: { placeholder: "Bathrooms" },
+              attrs: { placeholder: "" },
               model: {
                 value: _vm.formInline.bathrooms,
                 callback: function ($$v) {
@@ -92606,7 +92606,7 @@ var render = function () {
             "el-select",
             {
               staticStyle: { width: "70px" },
-              attrs: { placeholder: "Stories" },
+              attrs: { placeholder: "" },
               model: {
                 value: _vm.formInline.stories,
                 callback: function ($$v) {
@@ -92642,7 +92642,7 @@ var render = function () {
             "el-select",
             {
               staticStyle: { width: "70px" },
-              attrs: { placeholder: "Garages" },
+              attrs: { placeholder: "" },
               model: {
                 value: _vm.formInline.garages,
                 callback: function ($$v) {

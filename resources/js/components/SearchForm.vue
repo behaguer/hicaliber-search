@@ -1,10 +1,10 @@
 <template>
-<el-form :inline="true" :model="formInline" class="demo-form-inline">
+<el-form :inline="true" :model="formInline" class="search-form">
   <el-form-item label="">
     <el-input v-model="formInline.name" placeholder="Name"></el-input>
   </el-form-item>
   <el-form-item label="Bedrooms">
-    <el-select v-model="formInline.bedrooms" placeholder="Bedrooms" style="width:70px">
+    <el-select v-model="formInline.bedrooms" placeholder="" style="width:70px">
       <el-option label="Choose One" value=""></el-option>
       <el-option label="1" value="1"></el-option>
       <el-option label="2" value="2"></el-option>
@@ -14,7 +14,7 @@
     </el-select>
   </el-form-item>
   <el-form-item label="Bathrooms">
-    <el-select v-model="formInline.bathrooms" placeholder="Bathrooms" style="width:70px">
+    <el-select v-model="formInline.bathrooms" placeholder="" style="width:70px">
       <el-option label="Choose One" value=""></el-option>
       <el-option label="1" value="1"></el-option>
       <el-option label="2" value="2"></el-option>
@@ -24,7 +24,7 @@
     </el-select>
   </el-form-item>
   <el-form-item label="Stories">
-    <el-select v-model="formInline.stories" placeholder="Stories" style="width:70px">
+    <el-select v-model="formInline.stories" placeholder="" style="width:70px">
       <el-option label="Choose One" value=""></el-option>
       <el-option label="1" value="1"></el-option>
       <el-option label="2" value="2"></el-option>
@@ -34,7 +34,7 @@
     </el-select>
   </el-form-item>
   <el-form-item label="Garages">
-    <el-select v-model="formInline.garages" placeholder="Garages" style="width:70px">
+    <el-select v-model="formInline.garages" placeholder="" style="width:70px">
       <el-option label="Choose One" value=""></el-option>
       <el-option label="1" value="1"></el-option>
       <el-option label="2" value="2"></el-option>

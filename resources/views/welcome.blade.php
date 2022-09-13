@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="/css/app.css" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -18,7 +19,7 @@
     <body class="antialiased" >
         <h1>Hicaliber-Search</h1>
         <div id="app">
-            <el-container style="height: 500px; border: 1px solid #eee">
+            <el-container style="padding:10px; border: 1px solid #eee">
                 <search-form></search-form>
             </el-container>
 
