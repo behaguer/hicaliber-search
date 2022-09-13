@@ -7067,13 +7067,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       fullscreenLoading: false,
       formInline: {
         user: '',
-        region: ''
+        region: '',
+        price: [0, 1000000]
       }
     };
   },
@@ -92669,6 +92680,26 @@ var render = function () {
         ],
         1
       ),
+      _vm._v(" "),
+      _c("el-form-item", { attrs: { label: "Price Range" } }, [
+        _c(
+          "div",
+          { staticClass: "block", staticStyle: { "min-width": "200px" } },
+          [
+            _c("el-slider", {
+              attrs: { range: "", max: 700000 },
+              model: {
+                value: _vm.price,
+                callback: function ($$v) {
+                  _vm.price = $$v
+                },
+                expression: "price",
+              },
+            }),
+          ],
+          1
+        ),
+      ]),
       _vm._v(" "),
       _c(
         "el-form-item",

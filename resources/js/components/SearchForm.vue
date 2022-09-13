@@ -43,6 +43,16 @@
       <el-option label="5" value="5"></el-option>
     </el-select>
   </el-form-item>
+  <el-form-item label="Price Range">
+    <div class="block" style="min-width:200px;">
+    <el-slider
+      v-model="price"
+      range
+      :max="700000"
+      >
+    </el-slider>
+  </div>
+  </el-form-item>
   <el-form-item>
     <el-button type="primary" @click="onSubmit" v-loading.fullscreen.lock="fullscreenLoading" >Search</el-button>
   </el-form-item>
@@ -55,7 +65,8 @@
         fullscreenLoading: false,
         formInline: {
           user: '',
-          region: ''
+          region: '',
+          price: [0,1000000]
         }
       }
     },
