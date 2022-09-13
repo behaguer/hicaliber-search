@@ -17,14 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-  /*
-  |-------------------------------------------------------------------------------
-  | Get All Homes
-  |-------------------------------------------------------------------------------
-  | URL:            /api/v1/homes
-  | Controller:     API\SearchController@getHomes
-  | Method:         GET
-  | Description:    Gets all of the homes in the application
-  */
-Route::get('/search', 'API\SearchController@getHomes');

@@ -1,19 +1,26 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Request;
+use Illuminate\Http\Request;
+
 use App\Models\Home;
 
 class SearchController extends Controller
 {
+    public function index() {
 
-  public function getHomes(){
-
-    $homes = Home::all();
-
-    return response()->json( $homes );
-  }
-
+        $homes = Home::all();
+    
+        return response()->json( $homes );
+    
+      }
+    
+      public function getHomes(){
+    
+        $homes = Home::all();
+    
+        return response()->json( $homes );
+      }
+    
 }
