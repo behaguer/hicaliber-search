@@ -29,10 +29,13 @@ class SearchController extends Controller
         $conditions = [];
 
         if (!empty($name))
-          $conditions[] = ['name','LIKE',$name];
+          $conditions[] = ['name','LIKE',"%".$name."%"];
 
-        if (!empty($price))
-          $conditions[] = ['price','<=',$price];
+        if (!empty($price) && is_array($price)){
+          $conditions[] = ['price','>=',$price[0]];
+          $conditions[] = ['price','<=',$price[1]];
+        }
+          
 
         if (!empty($bedrooms))
           $conditions[] = ['bedrooms','>=',$bedrooms];
