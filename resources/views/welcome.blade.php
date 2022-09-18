@@ -17,7 +17,7 @@
 
     </head>
     <body class="antialiased" >
-        <h1>Hicaliber-Search</h1>
+        <img class="logo" src="https://www.hicaliber.com.au/wp-content/uploads/2021/09/hicaliber_new_logo_bb.png" alt="Hicaliber-Search">
         <div id="app">
             <el-container style="padding:10px; border: 1px solid #eee">
                 <search-form></search-form>
