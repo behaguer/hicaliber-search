@@ -6,12 +6,14 @@
     <el-table-column
       prop="name"
       label="Name"
-      width="180">
+      width="180"
+      sortable>
     </el-table-column>
     <el-table-column
       prop="price"
       label="Price"
-      width="180">
+      width="180"
+      sortable>
     </el-table-column>
     <el-table-column
       prop="bedrooms"

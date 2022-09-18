@@ -7051,6 +7051,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -7153,6 +7155,7 @@ __webpack_require__.r(__webpack_exports__);
         bedrooms: 0,
         bathrooms: 0,
         stories: 0,
+        garages: 0,
         price: 0
       }
     };
@@ -92813,11 +92816,11 @@ var render = function () {
     },
     [
       _c("el-table-column", {
-        attrs: { prop: "name", label: "Name", width: "180" },
+        attrs: { prop: "name", label: "Name", width: "180", sortable: "" },
       }),
       _vm._v(" "),
       _c("el-table-column", {
-        attrs: { prop: "price", label: "Price", width: "180" },
+        attrs: { prop: "price", label: "Price", width: "180", sortable: "" },
       }),
       _vm._v(" "),
       _c("el-table-column", { attrs: { prop: "bedrooms", label: "Bedrooms" } }),

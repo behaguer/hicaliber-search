@@ -68,6 +68,7 @@
           bedrooms: 0,
           bathrooms: 0,
           stories: 0,
+          garages: 0,
           price: 0
         }
       }
