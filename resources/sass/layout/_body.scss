@@ -4,4 +4,9 @@ body {
 .logo {
   margin:0 auto;
   display: block;
+  
+  @media screen and (max-width:420px){
+    width: 100%;
+  }
+
 }

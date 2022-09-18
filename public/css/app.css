@@ -10915,6 +10915,11 @@ body {
   margin: 0 auto;
   display: block;
 }
+@media screen and (max-width: 420px) {
+  .logo {
+    width: 100%;
+  }
+}
 
 .search-form {
   background-color: #f1f1f1;
