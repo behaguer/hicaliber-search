@@ -22,7 +22,9 @@
             <el-container style="padding:10px; border: 1px solid #eee">
                 <search-form></search-form>
             </el-container>
-
+            <el-container style="padding:10px; border: 1px solid #eee">
+                <results-table></results-table>
+            </el-container>
           </div>
 
           <script src="{{ mix('/js/app.js') }}" defer></script>

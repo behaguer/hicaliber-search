@@ -1,5 +1,5 @@
 <template>
-<el-form :inline="true" :model="formInline" class="search-form">
+<el-form id="search-form" :inline="true" :model="formInline" class="search-form">
   <el-form-item label="">
     <el-input v-model="formInline.name" placeholder="Name"></el-input>
   </el-form-item>
@@ -46,7 +46,7 @@
   <el-form-item label="Price Range">
     <div class="block" style="min-width:200px;">
     <el-slider
-      v-model="price"
+      v-model="formInline.price"
       range
       :max="700000"
       >
@@ -64,16 +64,30 @@
       return {
         fullscreenLoading: false,
         formInline: {
-          user: '',
-          region: '',
-          price: [0,1000000]
+          name: '',
+          bedrooms: 0,
+          bathrooms: 0,
+          stories: 0,
+          price: 0
         }
       }
     },
     methods: {
       onSubmit() {
-        console.log('submit!');
+
+        console.log(this.formInline);
         this.fullscreenLoading = true;
+
+        const baseURI = 'http://127.0.0.1:8000/api/search'
+        axios.post(baseURI, this.formInline)
+        .then((result) => {
+
+          this.homes = result.data
+
+          this.$root.$emit('searchedHome', this.homes); // Emit the event caught by the ResultsTable
+
+        })
+
         setTimeout(() => {
           this.fullscreenLoading = false;
         }, 2000);

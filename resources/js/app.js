@@ -11,8 +11,11 @@ window.Vue = require('vue').default;
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import locale from 'element-ui/lib/locale/lang/en'
+import axios from 'axios'
 
-Vue.use(ElementUI);
+Vue.prototype.$http = axios
+Vue.use(ElementUI, { locale });
 
 /**
  * The following block of code may be used to automatically register your
@@ -27,6 +30,7 @@ Vue.use(ElementUI);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('search-form', require('./components/SearchForm.vue').default);
+Vue.component('results-table', require('./components/ResultsTable.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
